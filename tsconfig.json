@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "lib",
+    "declaration": true,
+    "allowJs": true,
+    "module": "ESNext",
+    "strict": true,
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "target": "ES6",
+    "moduleResolution": "node",
+    "isolatedModules": true
+  },
+  "include": ["src"],
+  "exclude": ["lib", "node_modules"]
+}

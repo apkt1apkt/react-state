@@ -1,0 +1,42 @@
+{
+  "name": "@point-solve/react-state",
+  "version": "1.0.0",
+  "private": "false",
+  "description": "State management hooks for react",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "build": "yarn clean && yarn lint && tsc",
+    "clean": "rimraf lib",
+    "copy:lib": "cp LICENSE README.md package.json lib/",
+    "dist": "yarn build && yarn dist:only",
+    "dist:only": "yarn copy:lib && cd lib/ && npm publish",
+    "lint": "eslint ./src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apkt1apkt/react-state.git"
+  },
+  "keywords": [
+    "react",
+    "state management",
+    "hooks"
+  ],
+  "author": "Tsatsu Arnold <tsatsuarnold@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/apkt1apkt/react-state/issues",
+    "email": "tsatsuarnold@gmail.com"
+  },
+  "homepage": "https://github.com/apkt1apkt/react-state#readme",
+  "peerDependencies": {
+    "react": "^17.0.2"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.27.0",
+    "@typescript-eslint/parser": "^4.27.0",
+    "eslint": "^7.28.0",
+    "eslint-plugin-import": "^2.23.4",
+    "typescript": "^4.3.2"
+  }
+}
